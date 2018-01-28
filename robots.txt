@@ -3,3 +3,5 @@ Allow: /
 
 User-agent: ia_archiver
 Disallow: /
+
+Sitemap: http://www.shaakunthala.com/sitemap.xml
