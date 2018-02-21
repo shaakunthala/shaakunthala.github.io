@@ -1,6 +1,4 @@
 User-agent: *
 Allow: /
-Disallow: /resources/
-Disallow: /resources/*
 
 Sitemap: http://www.shaakunthala.com/sitemap.xml
