@@ -227,6 +227,15 @@ null==d?void 0:d))},attrHooks:{type:{set:function(a,b){if(!o.radioValue&&"radio"
             #email-placeholder {
                 cursor: pointer;
             }
+            #blackout {
+                background: #000;
+                z-index: 99999;
+                left: 0;
+                top: 0;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+            }
             @media (max-width: 480px) {
                 body {
                     width: 100%;
@@ -283,6 +292,9 @@ null==d?void 0:d))},attrHooks:{type:{set:function(a,b){if(!o.radioValue&&"radio"
         </style>
     </head>
     <body>
+        <div id="blackout">
+            <p style="color:#fff; padding-left: 2%; padding-right: 5%; font-family: 'Lucida Console', Monaco, monospace">I’m blacking out this page as a silent protest against the Internet Censorship in Sri Lanka. Click to show site content.</p>
+        </div>
         <div id="main">
             <div id="header">
                 <h1>ශාකුන්තල | Shaakunthala</h1>
@@ -459,6 +471,9 @@ null==d?void 0:d))},attrHooks:{type:{set:function(a,b){if(!o.radioValue&&"radio"
                     loc.hash = "";
                 }
             }
+            function fadeOutBlack () {
+                $("#blackout").css ("display", "none");
+            }
             $(document).ready (function () {
                 var hash = window.location.hash;
                 if (hash == null || hash == "") {
@@ -490,6 +505,12 @@ null==d?void 0:d))},attrHooks:{type:{set:function(a,b){if(!o.radioValue&&"radio"
             $("#email-placeholder").click (function () {
                 eval(atob("dmFyIGU9JChhdG9iKCJQR0UrUEM5aFBnPT0iKSkudGV4dChhdG9iKCJjMkZ0WldWeVlVQnphR0ZoYTNWdWRHaGhiR0V1WTI5dCIpKTtlLmF0dHIoYXRvYigiYUhKbFpnPT0iKSxhdG9iKCJiV0ZwYkhSdk9uTmhiV1ZsY21GQWMyaGhZV3QxYm5Sb1lXeGhMbU52YlE9PSIpKTskKHRoaXMpLmFmdGVyKGUpOyQodGhpcykuY3NzKCJkaXNwbGF5Iiwibm9uZSIpOw=="));
             });
+            $("#blackout").click (function () {
+                $(this).fadeOut ("slow", fadeOutBlack);
+            });
+            $("#blackout").keypress (function () {
+                $(this).fadeOut ("slow", fadeOutBlack);
+            })
             // -->
         </script>
     </body>
