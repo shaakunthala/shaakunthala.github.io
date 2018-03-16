@@ -293,11 +293,11 @@ null==d?void 0:d))},attrHooks:{type:{set:function(a,b){if(!o.radioValue&&"radio"
         </style>
     </head>
     <body>
-        <div id="blackout">
+        <!-- <div id="blackout">
             <p style="color:#fff; padding-left: 2%; padding-right: 5%; font-family: 'Lucida Console', Monaco, monospace">
-                I’m blacking out this page as a silent protest against the ongoing Internet Censorship in Sri Lanka. Click to show site content.
+                Content Placeholder
             </p>
-        </div>
+        </div> -->
         <div id="main">
             <div id="header">
                 <h1>ශාකුන්තල | Shaakunthala</h1>
@@ -474,9 +474,11 @@ null==d?void 0:d))},attrHooks:{type:{set:function(a,b){if(!o.radioValue&&"radio"
                     loc.hash = "";
                 }
             }
+            /*
             function fadeOutBlack () {
                 $("#blackout").css ("display", "none");
             }
+            */
             $(document).ready (function () {
                 var hash = window.location.hash;
                 if (hash == null || hash == "") {
@@ -508,12 +510,14 @@ null==d?void 0:d))},attrHooks:{type:{set:function(a,b){if(!o.radioValue&&"radio"
             $("#email-placeholder").click (function () {
                 eval(atob("dmFyIGU9JChhdG9iKCJQR0UrUEM5aFBnPT0iKSkudGV4dChhdG9iKCJjMkZ0WldWeVlVQnphR0ZoYTNWdWRHaGhiR0V1WTI5dCIpKTtlLmF0dHIoYXRvYigiYUhKbFpnPT0iKSxhdG9iKCJiV0ZwYkhSdk9uTmhiV1ZsY21GQWMyaGhZV3QxYm5Sb1lXeGhMbU52YlE9PSIpKTskKHRoaXMpLmFmdGVyKGUpOyQodGhpcykuY3NzKCJkaXNwbGF5Iiwibm9uZSIpOw=="));
             });
+            /*
             $("#blackout").click (function () {
                 $(this).fadeOut ("slow", fadeOutBlack);
             });
             $("#blackout").keypress (function () {
                 $(this).fadeOut ("slow", fadeOutBlack);
             })
+            */
             // -->
         </script>
     </body>
