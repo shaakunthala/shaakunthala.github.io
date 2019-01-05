@@ -310,6 +310,9 @@ null==d?void 0:d))},attrHooks:{type:{set:function(a,b){if(!o.radioValue&&"radio"
                 <span style="font-family: Georgia, serif; font-size: 45px; font-stretch: expanded;">
                     This site is outdated.<br/>Await something exciting soon..!
                 </span>
+                <div style="padding-top: 18px;">
+                    <button id="iwannasee" style="font-size: 20px;">But I want to see</button>
+                </div>
             </div>
             <div id="content">
                 <div id="certifications">
@@ -519,6 +522,12 @@ null==d?void 0:d))},attrHooks:{type:{set:function(a,b){if(!o.radioValue&&"radio"
             });
             $("#email-placeholder").click (function () {
                 eval(atob("dmFyIGU9JChhdG9iKCJQR0UrUEM5aFBnPT0iKSkudGV4dChhdG9iKCJjMkZ0WldWeVlVQnphR0ZoYTNWdWRHaGhiR0V1WTI5dCIpKTtlLmF0dHIoYXRvYigiYUhKbFpnPT0iKSxhdG9iKCJiV0ZwYkhSdk9uTmhiV1ZsY21GQWMyaGhZV3QxYm5Sb1lXeGhMbU52YlE9PSIpKTskKHRoaXMpLmFmdGVyKGUpOyQodGhpcykuY3NzKCJkaXNwbGF5Iiwibm9uZSIpOw=="));
+            });
+            
+            $('#iwannasee').click(function() {
+                alert("Please note that SAFe Certification has expired.");
+                $('#outdated_notice_bg').css('display','none');
+                $('#outdated_notice').css('display', 'none');
             });
             /*
             $("#blackout").click (function () {
